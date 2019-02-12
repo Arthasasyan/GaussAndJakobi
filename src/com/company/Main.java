@@ -1,6 +1,7 @@
 package com.company;
 
 import com.company.gauss.GaussAlgorithm;
+import com.company.jacobi.JacobiAlgorithm;
 
 import java.io.FileReader;
 import java.io.IOException;
@@ -26,5 +27,7 @@ public class Main {
     }
     MatrixAlgorithm gauss = new GaussAlgorithm(matrix);
     System.out.println("Gauss"+gauss.getResults().toString());
+    MatrixAlgorithm jacobi = new JacobiAlgorithm(matrix, 0.01f);
+    System.out.println("Jacobi "+jacobi.getResults().toString());
   }
 }

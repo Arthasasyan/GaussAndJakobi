@@ -16,7 +16,7 @@ public class GaussAlgorithm extends MatrixAlgorithm {
 
   @Override
   public List<Float> getResults() {
-    System.out.println(matrix);
+   // System.out.println(matrix);
     for(int i=0;i<matrix.size()-1;i++) //for every line
     {
       List<Float> currentLine = matrix.get(i);
